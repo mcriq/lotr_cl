@@ -399,9 +399,9 @@ echo "Creating Mount Doom..."
 mkdir -p $BASE_DIR/mordor/mount_doom/chamber_of_fire
 
 # Create different paths with timestamps
-touch -d "3 hours ago" $BASE_DIR/mordor/mount_doom/southern_path
-touch -d "2 hours ago" $BASE_DIR/mordor/mount_doom/eastern_path
-touch -d "1 hour ago" $BASE_DIR/mordor/mount_doom/secret_path
+touch -t $(date -v-3H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/southern_path
+touch -t $(date -v-2H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/eastern_path
+touch -t $(date -v-1H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/secret_path
 
 # Create completion script
 cat > $BASE_DIR/mordor/mount_doom/chamber_of_fire/complete_the_quest.sh << 'EOFDOOM'

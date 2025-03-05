@@ -118,7 +118,7 @@ You've reached Mordor, the domain of the enemy. The Ring grows unbearably heavy,
 ### Your Tasks:
 
 1. **Infiltrate the Dark Land**
-   * Find Sauron's plans file and read it
+   * Find Sauron's plans file and read it for clues as to where specifically to destroy the ring
    * Lady Galadriel's vision mentioned a distraction. Perhaps there is a script that can help us?
    * Make it executable and run it
 

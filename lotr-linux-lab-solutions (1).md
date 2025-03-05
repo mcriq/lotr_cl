@@ -236,7 +236,7 @@ cd ~/middle_earth/mordor/mount_doom/
 
 # Find the forge chamber
 ls
-cd chamber_of_fire/
+cd forge_chamber/
 ```
 **Explanation:** These commands navigate to the forge chamber where the Ring must be destroyed.
 

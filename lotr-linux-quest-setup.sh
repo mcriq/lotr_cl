@@ -170,7 +170,7 @@ if [ ! -f "$RING_FILE" ]; then
     exit 1
 fi
 
-echo -n "How many members are in the council? Count them: "
+echo -n "How many members are in the council? "
 read council_count
 
 if [ "$council_count" != "10" ]; then
@@ -249,14 +249,14 @@ if [ ! -x "$light_script" ]; then
 fi
 
 output=$($light_script)
-if [[ "$output" != *"Let there be light"* ]]; then
-    echo "Your light script doesn't produce enough light! It should output 'Let there be light!'"
+if [[ "$output" != *"Ore kal"* ]]; then
+    echo "Your light script doesn't produce enough light! It should output 'Ore kal!'"
     exit 1
 fi
 
 echo "Your light illuminates the path ahead!"
 echo "You escape Moria with the Ring still in your possession..."
-echo "You find yourself in the golden woods of Lothlórien..."
+echo "Navigate to Lothlórien!"
 
 # Create Lothlórien
 mkdir -p $BASE_DIR/lothlorien/forest

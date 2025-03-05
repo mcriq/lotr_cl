@@ -67,25 +67,25 @@ You've arrived at the Last Homely House East of the Sea, with the Ring in your p
 
 ## QUEST PART 3: THE MINES OF MORIA
 
-The mountain pass is blocked! You must brave the ancient dwarven mines of Moria, with the Ring growing heavier around your neck.
+You must brave the ancient dwarven mines of Moria, with the Ring growing heavier around your neck.
 
 ### Your Tasks:
 
 1. **Enter the sealed doors**
-   * Find an executable script at the entrance to Moria
-   * Make it executable with the right permissions (hint: `chmod`)
-   * Run the script and enter the password "mellon" (Elvish for "friend")
+   * Find a script at the entrance to Moria
+   * Make it executable
+   * Run the script and enter the password (hint: it's the elvish word for friend)
 
 2. **Navigate the dark tunnels**
    * Create a script called `light.sh` in the Moria directory
-   * Make it output the exact text: "Let there be light!"
+   * Make it output the exact text: "Ore kal!" (This means "mighty light" in Valarin. The language of Gandalf's wizard kind, the Ainur 🧙‍♂️)
    * Make your script executable
-   * Search the tunnels for hidden notes (hint: look for a hidden file)
+   * Search the tunnels for hidden notes that might give a clue as to where to find the darkest chamber (hint: look for a hidden file) or maybe find a shortcut with a powerful command?
 
 3. **Escape from Moria**
    * Find the darkest chamber mentioned in the hidden note
    * Run the escape script in this chamber
-   * If your light script works correctly, you'll escape to Lothlórien!
+   * If your light script works correctly, you'll be able to escape to Lothlórien!
 
 ---
 

@@ -120,7 +120,7 @@ chmod +x speak_friend.sh
 ```bash
 # Create a light script
 echo '#!/bin/bash' > light.sh
-echo 'echo "Let there be light!"' >> light.sh
+echo 'echo "Ore kal!"' >> light.sh
 
 # Make it executable
 chmod +x light.sh
@@ -134,6 +134,9 @@ ls
 cd north/
 ls -a
 cat .scribbled_note
+
+# Alternative from moria directory
+find tunnels -name "darkest*"
 ```
 **Explanation:** These commands create a shell script with the required output, make it executable, and then explore the tunnels to find the hidden note.
 

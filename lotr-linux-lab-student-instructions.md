@@ -5,9 +5,10 @@
 
 ### Getting Started
 
-1. Open a terminal window
-2. Navigate to Bag End: `cd ~/middle_earth/shire/bag_end/`
-3. Create a journey log: `mkdir -p ~/my_journey && touch ~/my_journey/journey_log.txt`
+1. Open a terminal window and navigate to the directory where you downloaded the quest setup script.
+2. Run the shell script in your terminal `./lotr-linux-quest-setup.sh`
+3. Navigate to Bag End: `cd ~/middle_earth/shire/bag_end/`
+4. Create a "my_journey" directory and a "journey_log.txt" file in that same directory: `mkdir -p ~/my_journey && touch ~/my_journey/journey_log.txt`
 
 ### How This Quest Works
 
@@ -17,7 +18,7 @@ This is a **progressive adventure** where each location must be unlocked by comp
 2. Each location contains checkpoint scripts that will generate the next location
 3. You must solve challenges and provide correct answers to proceed
 4. If you try to skip ahead, you'll find the locations don't exist yet!
-5. Document your commands and discoveries in your journey log
+5. Document your commands and discoveries in your journey log if you'd like
 
 ---
 
@@ -30,17 +31,16 @@ Bilbo Baggins has disappeared, leaving behind only a mysterious message and the 
 1. **Find Bilbo's hidden message**
    * Hidden files in Linux start with a dot (.)
    * Use a command to show ALL files, including hidden ones
-   * Read the hidden message using the `cat` command
+   * Read the hidden message
 
 2. **Find the One Ring**
-   * According to Bilbo's message, he left the Ring in a secret drawer
    * Look for hidden directories that might contain the Ring
-   * When you find it, copy it to your journey directory (`~/my_journey/`)
+   * When you find it, move it to your journey directory (`~/my_journey/`)
 
 3. **Begin your journey to Rivendell**
-   * Run the `journey_to_rivendell.sh` script
+   * Run the `journey_to_rivendell.sh` script (you might need to change permissions on the script!)
    * Enter the password when prompted
-   * If successful, the script will generate Rivendell!
+   * If successful, the script will generate Rivendell and you can now navigate to it!
 
 ---
 
@@ -51,13 +51,12 @@ You've arrived at the Last Homely House East of the Sea, with the Ring in your p
 ### Your Tasks:
 
 1. **Attend the council meeting**
-   * Navigate to the council directory
-   * Count how many members are present in the council (hint: each member is a file)
+   * Count how many members are present in the council directory 
 
 2. **Research the Ring's history**
    * Explore the files in Rivendell
    * Find the largest text file and read it
-   * Determine which council member knows about the path through Moria (hint: search the ancient scroll)
+   * Determine which council member knows the next destination on the path to Mordor
 
 3. **Continue to Moria**
    * Run the `journey_to_moria.sh` script
@@ -81,7 +80,7 @@ The mountain pass is blocked! You must brave the ancient dwarven mines of Moria,
    * Create a script called `light.sh` in the Moria directory
    * Make it output the exact text: "Let there be light!"
    * Make your script executable
-   * Search the tunnels for hidden notes (hint: look in the north tunnel for a hidden file)
+   * Search the tunnels for hidden notes (hint: look for a hidden file)
 
 3. **Escape from Moria**
    * Find the darkest chamber mentioned in the hidden note

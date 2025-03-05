@@ -15,7 +15,7 @@ ls -a
 # Read Bilbo's hidden message
 cat .bilbo_message
 ```
-**Explanation:** The `ls -a` command shows all files, including hidden ones that start with a dot. The hidden message reveals that Bilbo has left the Ring in a secret drawer and provides the password "mellon".
+**Explanation:** The `ls -a` command shows all files, including hidden ones that start with a dot. The hidden message reveals that Bilbo has left the Ring in a secret drawer and provides the password "mushrooms".
 
 ### Finding the One Ring
 ```bash
@@ -50,7 +50,7 @@ chmod +x journey_to_rivendell.sh
 # Run the script
 ./journey_to_rivendell.sh
 ```
-**Answer to provide:** When prompted for the password, enter: `mellon`
+**Answer to provide:** When prompted for the password, enter: `mushrooms`
 
 **Outcome:** The script will verify that you have the Ring in your journey directory and create the Rivendell location with all its files and directories.
 

@@ -58,27 +58,27 @@ chmod +x journey_to_rivendell.sh
 # Navigate to Rivendell
 cd ~/middle_earth/rivendell/
 
-# Navigate to the council chamber
-cd council/
-
 # Count council members
-ls | wc -l
+ls council/ | wc -l
+
+# Alternative
+find council -type f | wc -l
 ```
 **Explanation:** The `ls | wc -l` command pipes the listing of files to the word count command with the lines option, counting the number of council members (files).
 
 ### Researching the Ring's History
 ```bash
-# Return to main Rivendell directory
-cd ..
-
 # Find the largest file
 ls -lS
 
-# Read the ancient scroll
-cat ancient_scroll
+# reverses the order! (just cool to show them this for future reference)
+ls -lS -r
 
-# Search for mentions of Moria
-grep -i "moria" ancient_scroll
+# Read the ancient scroll (mention that it's a pretty long text file and it might be more efficient to look with another command like grep)
+cat ancient_scroll 
+
+# Search for mentions of a path
+grep -i "path" ancient_scroll
 ```
 **Explanation:** The `ls -lS` command lists files sorted by size (largest first). The `grep` command searches for a specific string in a file, with `-i` making it case-insensitive.
 

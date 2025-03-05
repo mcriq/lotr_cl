@@ -56,12 +56,12 @@ You've arrived at the Last Homely House East of the Sea, with the Ring in your p
 2. **Research the Ring's history**
    * Explore the files in Rivendell
    * Find the largest text file and read it
-   * Determine which council member knows the next destination on the path to Mordor
+   * Determine which council member knows the next "path" to take on the journey to Mordor
 
 3. **Continue to Moria**
    * Run the `journey_to_moria.sh` script
    * Answer the questions based on what you've discovered
-   * If successful, the script will generate the Mines of Moria!
+   * If successful, the script will grant you access to the Mines of Moria directory! (it will be adjacent to the other location directories)
 
 ---
 

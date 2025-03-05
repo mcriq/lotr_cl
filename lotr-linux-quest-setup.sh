@@ -78,7 +78,7 @@ RING_FILE="$JOURNEY_DIR/the_one_ring"
 echo "The road to Rivendell stretches before you..."
 
 # Check if they have the Ring
-echo "You check to make sure the ring is secure in your pocket..."
+echo "You check to make sure the ring is secure..."
 if [ ! -f "$RING_FILE" ]; then
     echo "You cannot leave without the Ring! You must find it and copy it to your journey directory."
     echo "Hint: Look for Bilbo's secret drawer and copy the Ring to $JOURNEY_DIR/"

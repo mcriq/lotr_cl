@@ -382,8 +382,8 @@ Armies of Mordor are to be deployed as follows:
 
 The Ring-bearer must not reach Mount Doom.
 
-Guard all paths to Mount Doom, especially the 
-forge chamber where the Ring could be destroyed.
+Guard all paths to Mount Doom, especially toward the west where the
+Ring could be destroyed in the forge chamber.
 EOFMORDOR
 
 # Create other Mordor files
@@ -428,18 +428,18 @@ echo "The Ring grows unbearably heavy as you approach its birthplace..."
 echo "Navigate to Mount Doom..."
 
 # Create Mount Doom
-mkdir -p $BASE_DIR/mordor/mount_doom/forge_chamber
 
 # Create different paths with timestamps
-touch -t $(date -v-3H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/southern_path
-touch -t $(date -v-2H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/eastern_path
-touch -t $(date -v-1H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/secret_path
+mkdir -p $(date -v-3H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/southern_path
+mkdir -p $(date -v-2H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/eastern_path
+mkdir -p $(date -v-1H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/western_path
+mkdir -p $BASE_DIR/mordor/mount_doom/western_path/forge_chamber
 
 # Create completion script
-cat > $BASE_DIR/mordor/mount_doom/forge_chamber/complete_the_quest.sh << 'EOFDOOM'
+cat > $BASE_DIR/mordor/mount_doom/western_path/forge_chamber/complete_the_quest.sh << 'EOFDOOM'
 #!/bin/bash
 
-BASE_DIR=$(dirname $(dirname $(dirname $(dirname $(realpath $0)))))
+BASE_DIR=$(dirname $(dirname $(dirname $(dirname $(dirname $(realpath $0))))))
 JOURNEY_DIR="$HOME/my_journey"
 RING_FILE="$JOURNEY_DIR/the_one_ring"
 
@@ -452,7 +452,7 @@ if [ ! -f "$RING_FILE" ]; then
     exit 1
 fi
 
-destroy_script="$BASE_DIR/mordor/mount_doom/forge_chamber/destroy_ring.sh"
+destroy_script="$BASE_DIR/mordor/mount_doom/western_path/forge_chamber/destroy_ring.sh"
 
 if [ ! -f "$destroy_script" ]; then
     echo "You need to create a script called destroy_ring.sh to destroy the Ring!"
@@ -543,7 +543,7 @@ echo "
 exit 0
 EOFDOOM
 
-chmod +x $BASE_DIR/mordor/mount_doom/forge_chamber/complete_the_quest.sh
+chmod +x $BASE_DIR/mordor/mount_doom/western_path/forge_chamber/complete_the_quest.sh
 EOFMORDOR
 
 chmod +x $BASE_DIR/mordor/journey_to_mount_doom.sh

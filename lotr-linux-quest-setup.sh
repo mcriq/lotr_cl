@@ -283,7 +283,7 @@ for i in {1..5}; do
 done
 
 # Create mallorn trees
-for i in {1..10}; do
+for i in {1..576}; do
   echo "A majestic mallorn tree of Lothlórien." > $BASE_DIR/lothlorien/forest/mallorn_tree_$i.mallorn
 done
 

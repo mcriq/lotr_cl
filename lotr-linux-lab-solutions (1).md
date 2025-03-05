@@ -34,10 +34,10 @@ cat the_one_ring
 # Create journey directory if it doesn't exist yet
 mkdir -p ~/my_journey
 
-# Copy the Ring to your journey directory
+# Move the Ring to your journey directory
 mv the_one_ring ~/my_journey/
 ```
-**Explanation:** These commands allow students to find the hidden .secret_drawer directory, navigate to it, find the Ring file, and copy it to their my_journey directory which is necessary to carry it throughout the quest.
+**Explanation:** These commands allow students to find the hidden .secret_drawer directory, navigate to it, find the Ring file, and move it to their my_journey directory which is necessary to carry it throughout the quest.
 
 ### Starting the Journey to Rivendell
 ```bash

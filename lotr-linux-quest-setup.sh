@@ -286,6 +286,11 @@ for i in {1..576}; do
   echo "A majestic mallorn tree of Lothlórien." > $BASE_DIR/lothlorien/forest/mallorn_tree_$i.mallorn
 done
 
+# Create oak trees
+for i in {1..10}; do
+  echo "A mighty oak tree of Lothlórien." > $BASE_DIR/lothlorien/forest/oak_tree_$i.oak
+done
+
 # Create next checkpoint script
 cat > $BASE_DIR/lothlorien/journey_to_mordor.sh << 'EOFLOTH'
 #!/bin/bash
@@ -312,14 +317,14 @@ fi
 echo -n "How many mallorn trees grow in the forest of Lothlórien? "
 read tree_count
 
-if [ "$tree_count" != "10" ]; then
+if [ "$tree_count" != "576" ]; then
     echo "That is not the correct count. You must observe the forest more carefully."
     exit 1
 fi
 
 echo "The Fellowship continues their journey toward Mordor..."
 echo "The Ring's burden grows heavier with each step..."
-echo "Creating the dark land of Mordor..."
+echo "Navigate to Mordor..."
 
 # Create Mordor
 mkdir -p $BASE_DIR/mordor/{black_gate,shelob_lair,tower}

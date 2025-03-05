@@ -162,20 +162,21 @@ cd ~/middle_earth/lothlorien/
 ls -l mirror_of_galadriel.txt
 
 # Change permissions to make it readable
-chmod 644 mirror_of_galadriel.txt
+chmod +r mirror_of_galadriel.txt
 
 # Read the mirror
 cat mirror_of_galadriel.txt
 ```
-**Explanation:** The `chmod 644` command sets read and write permissions for the owner and read-only for others. Any permission that makes the file readable (e.g., `chmod +r`) would work.
+**Explanation:** The `chmod +r` command sets read and write permissions for the owner and read-only for others. Any permission that makes the file readable (e.g., `chmod +r`) would work.
 
 ### Counting Mallorn Trees
 ```bash
 # Navigate to the forest
 cd forest/
 
-# Count mallorn trees
+# Count mallorn trees (demonstrate why ls alone won't work here)
 ls *.mallorn | wc -l
+find forest -name "*.mallorn" | wc -l
 ```
 **Explanation:** This command counts all files ending with `.mallorn` by listing them and piping to the word count command.
 

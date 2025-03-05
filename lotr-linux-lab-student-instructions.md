@@ -101,8 +101,8 @@ The elves of Lothlórien offer refuge and guidance for your quest. The Ring's bu
    * Change the permissions so you can read it (hint: `chmod`)
    * Read Galadriel's vision
 
-2. **Gather elven supplies**
-   * Count how many mallorn trees grow in the forest (files ending with .mallorn)
+2. **Rest in the forest**
+   * Count how many mallorn trees grow in the forest (hint: not all the trees in the forest are mallorns! You'll need to be crafty! All mallorn tree files end in ".mallorn")
 
 3. **Continue to Mordor**
    * Run the `journey_to_mordor.sh` script
@@ -119,7 +119,7 @@ You've reached Mordor, the domain of the enemy. The Ring grows unbearably heavy,
 
 1. **Infiltrate the Black Land**
    * Find Sauron's plans file and read it
-   * Locate a distraction script that will divert the Eye of Sauron
+   * Lady Galadriel's vision mentioned a distraction. Perhaps there is a script that can help us?
    * Make it executable and run it
 
 2. **Locate the path to Mount Doom**

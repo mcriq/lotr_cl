@@ -1,4 +1,4 @@
-# The Quest for the One Ring
+# The Quest of the One Ring
 ## A Linux Command Line Adventure
 
 *The fate of Middle Earth rests in your hands. Armed with only your terminal and command line skills, you must find the One Ring, carry it across Middle Earth, and destroy it in the fires of Mount Doom before the forces of darkness prevail.*
@@ -8,7 +8,7 @@
 1. Open a terminal window and navigate to the directory where you downloaded the quest setup script.
 2. Run the shell script in your terminal `./lotr-linux-quest-setup.sh`
 3. Navigate to Bag End: `cd ~/middle_earth/shire/bag_end/`
-4. Create a "my_journey" directory and a "journey_log.txt" file in that same directory: `mkdir -p ~/my_journey && touch ~/my_journey/journey_log.txt`
+4. Create a "my_journey" directory and a "journey_log.txt" using the following command: `mkdir -p ~/my_journey && touch ~/my_journey/journey_log.txt`
 
 ### How This Quest Works
 
@@ -18,7 +18,7 @@ This is a **progressive adventure** where each location must be unlocked by comp
 2. Each location contains checkpoint scripts that will generate the next location
 3. You must solve challenges and provide correct answers to proceed
 4. If you try to skip ahead, you'll find the locations don't exist yet!
-5. Document your commands and discoveries in your journey log if you'd like
+5. Document your commands and discoveries in your journey_log.txt (this is optional)
 
 ---
 
@@ -35,12 +35,12 @@ Bilbo Baggins has disappeared, leaving behind only a mysterious message and the 
 
 2. **Find the One Ring**
    * Look for hidden directories that might contain the Ring
-   * When you find it, move it to your journey directory (`~/my_journey/`)
+   * When you find it, move it to your `my_journey` directory (`~/my_journey/`)
 
 3. **Begin your journey to Rivendell**
    * Run the `journey_to_rivendell.sh` script (you might need to change permissions on the script!)
    * Enter the password when prompted
-   * If successful, the script will generate Rivendell and you can now navigate to it!
+   * If successful, the script will generate the Rivendell location in the top level of the middle_earth directory and you can navigate to it!
 
 ---
 
@@ -51,7 +51,7 @@ You've arrived at the Last Homely House East of the Sea, with the Ring in your p
 ### Your Tasks:
 
 1. **Attend the council meeting**
-   * Count how many members are present in the council directory 
+   * Count how many members are present in the council directory (try to use a command instead of manually counting!)
 
 2. **Research the Ring's history**
    * Explore the files in Rivendell

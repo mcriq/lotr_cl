@@ -35,10 +35,7 @@ cat the_one_ring
 mkdir -p ~/my_journey
 
 # Copy the Ring to your journey directory
-cp the_one_ring ~/my_journey/
-
-# Return to Bag End
-cd ..
+mv the_one_ring ~/my_journey/
 ```
 **Explanation:** These commands allow students to find the hidden .secret_drawer directory, navigate to it, find the Ring file, and copy it to their my_journey directory which is necessary to carry it throughout the quest.
 

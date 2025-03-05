@@ -94,8 +94,7 @@ if [ "$password" != "mushrooms" ]; then
 fi
 
 echo "Password accepted!"
-echo "You carry the Ring safely to Rivendell..."
-echo "Navigate to middle_earth/rivendell"
+echo "You carry the Ring safely to Rivendell...(navigate to the rivendell directory)"
 
 # Create Rivendell
 mkdir -p $BASE_DIR/rivendell/council
@@ -189,7 +188,7 @@ fi
 
 echo "The Fellowship decides to journey through the Mines of Moria!"
 echo "You carefully guard the Ring as you travel..."
-echo "Creating the entrance to Moria..."
+echo "You arrive at the entrance to Moria, but it is sealed...(navigate to the moria directory)"
 
 # Create Moria
 mkdir -p $BASE_DIR/moria/tunnels/{east,west,north,south}
@@ -205,7 +204,7 @@ read password
 
 if [ "$password" = "mellon" ]; then
   echo "The doors slowly open... You enter the Mines of Moria."
-  echo "You find a note that says: 'The orcs are coming. Look to the darkest chamber.'"
+  echo "You find a note that says: 'The orcs are coming. Look to the darkest chamber in the tunnels.'"
 else
   echo "Nothing happens. The doors remain sealed."
 fi

@@ -174,7 +174,7 @@ cat mirror_of_galadriel.txt
 # Navigate to the forest
 cd forest/
 
-# Count mallorn trees (demonstrate why ls alone won't work here)
+# Count mallorn trees (demonstrate why ls | wc -l alone won't work here)
 ls *.mallorn | wc -l
 find forest -name "*.mallorn" | wc -l
 ```
@@ -182,15 +182,12 @@ find forest -name "*.mallorn" | wc -l
 
 ### Continuing to Mordor
 ```bash
-# Return to Lothlórien main directory
-cd ..
-
 # Run the journey script
 chmod +x journey_to_mordor.sh
 ./journey_to_mordor.sh
 ```
 **Answer to provide:**
-- Number of mallorn trees: `10`
+- Number of mallorn trees: `576`
 
 **Outcome:** The script will verify you still have the Ring and create the Mordor location with all its files and directories.
 
@@ -215,9 +212,9 @@ chmod +x distraction.sh
 ### Finding the Path to Mount Doom
 ```bash
 # Search for mentions of where to destroy the Ring
-grep -i "chamber of fire" sauron_plans
+grep -i "destroy" sauron_plans
 ```
-**Explanation:** The `grep` command searches for the phrase "chamber of fire" which reveals where the Ring must be destroyed.
+**Explanation:** The `grep` command searches for the phrase "destroy" which reveals where the Ring must be destroyed.
 
 ### Journeying to Mount Doom
 ```bash
@@ -226,7 +223,7 @@ chmod +x journey_to_mount_doom.sh
 ./journey_to_mount_doom.sh
 ```
 **Answer to provide:**
-- Where to destroy the Ring: `chamber of fire`
+- Where to destroy the Ring: `forge chamber`
 
 **Outcome:** The script will verify you still have the Ring and create the Mount Doom location with all its files.
 
@@ -237,11 +234,11 @@ chmod +x journey_to_mount_doom.sh
 # Navigate to Mount Doom
 cd ~/middle_earth/mordor/mount_doom/
 
-# Find the chamber of fire
+# Find the forge chamber
 ls
 cd chamber_of_fire/
 ```
-**Explanation:** These commands navigate to the chamber of fire where the Ring must be destroyed.
+**Explanation:** These commands navigate to the forge chamber where the Ring must be destroyed.
 
 ### Destroying the Ring
 ```bash

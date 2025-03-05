@@ -117,18 +117,15 @@ You've reached Mordor, the domain of the enemy. The Ring grows unbearably heavy,
 
 ### Your Tasks:
 
-1. **Infiltrate the Black Land**
+1. **Infiltrate the Dark Land**
    * Find Sauron's plans file and read it
    * Lady Galadriel's vision mentioned a distraction. Perhaps there is a script that can help us?
    * Make it executable and run it
 
-2. **Locate the path to Mount Doom**
-   * Read Sauron's plans to learn where you must go to destroy the Ring
-
-3. **Journey to Mount Doom**
+2. **Journey to Mount Doom**
    * Run the `journey_to_mount_doom.sh` script
    * Answer the question about where to destroy the Ring
-   * If successful, the script will generate Mount Doom!
+   * If successful, you can continue to Mount Doom!
 
 ---
 
@@ -140,12 +137,12 @@ This is it! The final challenge to destroy the One Ring once and for all. The Ri
 
 1. **Climb the mountain**
    * Navigate to Mount Doom
-   * Find the chamber of fire
+   * Find the forge chamber
 
 2. **Destroy the Ring**
    * Create a script called `destroy_ring.sh` that will delete the Ring file from your journey directory
    * Make it executable
-   * Navigate to the chamber of fire
+   * Navigate to the forge chamber
    * Run the `complete_the_quest.sh` script to test your solution
    * If successful, Middle Earth will be saved!
 

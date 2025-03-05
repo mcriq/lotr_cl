@@ -3,6 +3,33 @@
 # This script creates just the starting location (Bag End with the Ring)
 # and the checkpoint scripts that will generate subsequent locations
 
+# Art
+echo "
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣠⣤⣤⣤⡴⠟⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢠⣄⠀⠀⠀⠀⠀⠀⠀⠀⣠⣾⣿⣿⡿⠋⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⢈⣿⣇⠀⠀⠀⠀⠀⣠⣾⣿⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠘⣿⡏⠀⠀⣤⣶⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢻⡇⠀⠀⠉⠉⠙⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢸⣇⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⢸⣿⠀⠀⠀⠀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⣼⣿⣦⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠀⠀⠀⠀⠀⠀⠀⠀⣰⣾⣷⣦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡏⠀⠀⠀⠀⣀⠀⠀⠀⢿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢸⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⠀⠀⠀⠀⣿⡆⠀⠀⠈⣿⣿⣿⣿⣿⣦⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⢸⣿⠸⠿⠛⠹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠀⠹⣿⡀⠀⢀⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠘⣿⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⠀⠸⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣿⡄⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠈⢿⡟⠛⢻⣿⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢻⡇⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⢸⣇⠀⠈⣿⣿⣿⣿⣿⣿⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⢸⡇⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⣿⡀⠀⣿⣿⣿⣿⣿⣿⣦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⡇⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠸⣧⠀⢻⣿⣿⣿⣿⣿⡙⠧⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣿⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⠀⠀⢻⡆⢸⣿⣿⣿⠿⠿⢿⣿⣆⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⣿⠀⠀⢼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡀⠀⢿⡀⠹⣿⡇⠀⠀⠈⣿⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⣤⣿⣿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣟⣋⣤⣀⣼⣷⣤⣿⣿⣤⣤⣄⣼⣿⣧⣤⣤⣤⡀⠀⠀⠀⠀⠀⠀
+⠀⢀⣼⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣦⡄⠀⠀⠀⠀
+⢰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⠀⠀⠀
+⠈⠻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄
+"
+
 # Set the base directory for the quest
 BASE_DIR=${1:-"$HOME/middle_earth"}
 echo "Creating the starting point of your Middle Earth adventure in: $BASE_DIR"
@@ -15,6 +42,7 @@ mkdir -p $BASE_DIR/.quest_master
 
 # Create Bag End files
 echo "Setting up Bag End in the Shire..."
+
 
 # Visible files
 cat > $BASE_DIR/shire/bag_end/pipe_weed << EOF
@@ -346,16 +374,16 @@ cat > $BASE_DIR/mordor/sauron_plans << 'EOFMORDOR'
 [The Dark Lord's battle plans]
 
 Armies of Mordor are to be deployed as follows:
-- Main force at the Black Gate to draw the attention of the West
-- Secondary force to take Osgiliath and then Minas Tirith
+- Reserve forces at the Black Gate to defend my tower
+- Deploy main force to take Osgiliath and then Minas Tirith
 - Nazgûl to search for the Ring throughout Middle Earth
 - Spies and informants to watch all roads leading to Mordor
+- Maybe make a backup ring?..... NAH!
 
-The Ring-bearer is believed to be heading for Mount Doom.
-We must intercept them before they reach the chamber of fire.
+The Ring-bearer must not reach Mount Doom.
 
-Specific orders: Guard all paths to Mount Doom, especially the 
-chamber of fire where the Ring could be destroyed.
+Guard all paths to Mount Doom, especially the 
+forge chamber where the Ring could be destroyed.
 EOFMORDOR
 
 # Create other Mordor files
@@ -390,17 +418,17 @@ fi
 echo -n "According to Sauron's plans, where must you go to destroy the Ring? "
 read ring_location
 
-if [[ "$ring_location" != *"chamber of fire"* && "$ring_location" != *"Chamber of Fire"* ]]; then
+if [[ "$ring_location" != *"forge chamber"* && "$ring_location" != *"Forge Chamber"* ]]; then
     echo "That's not the correct location. You need to study Sauron's plans more carefully."
     exit 1
 fi
 
 echo "With the Eye of Sauron distracted, you make your way to Mount Doom..."
 echo "The Ring grows unbearably heavy as you approach its birthplace..."
-echo "Creating Mount Doom..."
+echo "Navigate to Mount Doom..."
 
 # Create Mount Doom
-mkdir -p $BASE_DIR/mordor/mount_doom/chamber_of_fire
+mkdir -p $BASE_DIR/mordor/mount_doom/forge_chamber
 
 # Create different paths with timestamps
 touch -t $(date -v-3H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/southern_path
@@ -408,7 +436,7 @@ touch -t $(date -v-2H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/eastern_path
 touch -t $(date -v-1H +"%Y%m%d%H%M") $BASE_DIR/mordor/mount_doom/secret_path
 
 # Create completion script
-cat > $BASE_DIR/mordor/mount_doom/chamber_of_fire/complete_the_quest.sh << 'EOFDOOM'
+cat > $BASE_DIR/mordor/mount_doom/forge_chamber/complete_the_quest.sh << 'EOFDOOM'
 #!/bin/bash
 
 BASE_DIR=$(dirname $(dirname $(dirname $(dirname $(realpath $0)))))
@@ -455,7 +483,7 @@ cat > $BASE_DIR/shire/bag_end/celebration/victory_certificate.txt << 'EOFCERT'
 CERTIFICATE OF ACHIEVEMENT
 
 This certifies that YOU have successfully completed
-THE QUEST FOR THE ONE RING
+THE QUEST OF THE ONE RING
 
 Through your mastery of Linux command line skills,
 you navigated the perilous lands of Middle Earth,
@@ -485,7 +513,7 @@ echo "=============================================================="
 exit 0
 EOFDOOM
 
-chmod +x $BASE_DIR/mordor/mount_doom/chamber_of_fire/complete_the_quest.sh
+chmod +x $BASE_DIR/mordor/mount_doom/forge_chamber/complete_the_quest.sh
 EOFMORDOR
 
 chmod +x $BASE_DIR/mordor/journey_to_mount_doom.sh

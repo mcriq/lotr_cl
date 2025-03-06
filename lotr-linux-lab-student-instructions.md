@@ -6,7 +6,7 @@
 ### Getting Started
 
 1. Open a terminal window and navigate to the directory where you downloaded the quest setup script.
-2. Run the shell script in your terminal `./lotr-linux-quest-setup.sh`
+2. Run the shell script in your terminal `./lotr-linux-quest-setup.sh` (if you get a permisson denied error run the following command and try executing it again: `chmod +x lotr-linux-quest-setup.sh`)
 3. Navigate to Bag End: `cd ~/middle_earth/shire/bag_end/`
 4. Create a "my_journey" directory and a "journey_log.txt" using the following command: `mkdir -p ~/my_journey && touch ~/my_journey/journey_log.txt`
 

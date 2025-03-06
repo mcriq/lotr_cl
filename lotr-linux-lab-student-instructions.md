@@ -19,6 +19,7 @@ This is a **progressive adventure** where each location must be unlocked by comp
 3. You must solve challenges and provide correct answers to proceed
 4. If you try to skip ahead, you'll find the locations don't exist yet!
 5. Document your commands and discoveries in your journey_log.txt (this is optional)
+6. If you get stuck, try using the man page for the commands you're attempting to use, make a quick google search or ask a partner!
 
 ---
 
@@ -111,7 +112,7 @@ The elves of Lothlórien offer refuge and guidance for your quest. The Ring's bu
 
 ---
 
-## QUEST PART 5: THE DARK LAND
+## QUEST PART 5: MORDOR
 
 You've reached Mordor, the domain of the enemy. The Ring grows unbearably heavy, yet you must proceed.
 
@@ -144,18 +145,5 @@ This is it! The final challenge to destroy the One Ring once and for all. The Ri
    * Make it executable
    * Run the `complete_the_quest.sh` script to test your solution
    * If successful, Middle Earth will be saved!
-
----
-
-## COMPLETING YOUR QUEST
-
-After destroying the Ring, you'll receive a certificate of achievement. Record in your journey log:
-
-1. All the commands you used at each stage
-2. What you learned about Linux commands
-3. Which challenges you found most difficult
-4. Your favorite part of the adventure
-
-Submit your journey_log.txt file to complete your quest.
 
 ---

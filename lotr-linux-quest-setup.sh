@@ -155,9 +155,9 @@ For many years the Ring passed out of all knowledge until it was found
 by the creature Gollum in the Misty Mountains. Then it was discovered 
 by the Hobbit Bilbo Baggins, who passed it to his nephew Frodo.
 
-The Ring must be destroyed in the fires of Mount Doom where it was made.
-The path to Mount Doom lies through the Black Gate of Mordor, though
-Gandalf speaks of another path - through the Mines of Moria.
+The Ring must be destroyed in the fires of Mount Doom, in Mordor where it was created.
+The path to Mordor lies over the mountain pass of Caradhras, though
+Gimli speaks of another path - through the Mines of Moria.
 EOFINNER
 
 # Create additional scrolls with information
@@ -209,12 +209,12 @@ fi
 echo -n "Which council member knows about the path through Moria? "
 read member_name
 
-if [[ "$member_name" != "gandalf" && "$member_name" != "Gandalf" ]]; then
+if [[ "$member_name" != "gimli" && "$member_name" != "Gimli" ]]; then
     echo "That is not correct. Study the ancient scroll more carefully."
     exit 1
 fi
 
-echo "The Fellowship decides to journey through the Mines of Moria!"
+echo "The mountain pass is blocked! The Fellowship is forced to detour through the Mines of Moria!"
 echo "You carefully guard the Ring as you travel..."
 echo "You arrive at the entrance to Moria, but it is sealed...(navigate to the moria directory)"
 

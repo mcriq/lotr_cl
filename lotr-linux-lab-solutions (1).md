@@ -192,7 +192,7 @@ chmod +x journey_to_mordor.sh
 
 ## QUEST PART 5: MORDOR
 
-### Infiltrating the Black Land
+### Infiltrating the Dark Land
 ```bash
 # Navigate to Mordor
 cd ~/middle_earth/mordor/
@@ -213,7 +213,7 @@ chmod +x distraction.sh
 # Search for mentions of where to destroy the Ring
 grep -i "destroy" sauron_plans
 ```
-**Explanation:** The `grep` command searches for the phrase "destroy" which reveals where the Ring must be destroyed.
+**Explanation:** The `grep` command searches for the phrase "destroy" which reveals where the Ring must be destroyed. They could also search for "ring".
 
 ### Journeying to Mount Doom
 ```bash
@@ -241,7 +241,7 @@ cd forge_chamber/
 
 ### Destroying the Ring
 ```bash
-# Create the destroy script
+# Create the destroy script (alternatively they could use vim or nvim to make the file directly)
 echo '#!/bin/bash' > destroy_ring.sh
 echo 'rm ~/my_journey/the_one_ring' >> destroy_ring.sh
 
@@ -265,7 +265,6 @@ chmod +x complete_the_quest.sh
 2. **Potential Student Errors**
    - Students might forget to copy the Ring to their journey directory
    - They might accidentally delete the Ring file during their journey
-   - Some might try to recreate the Ring if they lose it (creative problem-solving!)
 
 3. **Alternative Solutions**
    - The destroy_ring.sh script could also use `find ~/my_journey -name "the_one_ring" -delete`

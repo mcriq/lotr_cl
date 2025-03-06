@@ -383,7 +383,7 @@ Armies of Mordor are to be deployed as follows:
 The Ring-bearer must not reach Mount Doom.
 
 Guard all paths to Mount Doom, especially toward the west where the
-Ring could be destroyed in the forge chamber.
+Ring could be destroyed in the "forge chamber".
 EOFMORDOR
 
 # Create other Mordor files

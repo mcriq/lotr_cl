@@ -56,7 +56,7 @@ You've arrived at the Last Homely House East of the Sea, with the Ring in your p
 2. **Research the Ring's history**
    * Explore the files in Rivendell
    * Find the largest text file and read it
-   * Determine which council member knows the next "path" to take on the journey to Mordor
+   * Determine which council member knows the next "path" to take on the journey to Mordor (since the text file is large it might be worth trying a command that searches the file for the word "path")
 
 3. **Continue to Moria**
    * Run the `journey_to_moria.sh` script
@@ -74,7 +74,7 @@ You must brave the ancient dwarven mines of Moria, with the Ring growing heavier
 1. **Enter the sealed doors**
    * Find a script at the entrance to Moria
    * Make it executable
-   * Run the script and enter the password (hint: it's the elvish word for friend)
+   * Run the script and enter the password (hint: it's the elvish word for friend. If you don't know the elvish word for friend, ask a nerd or google it!)
 
 2. **Navigate the dark tunnels**
    * Create a script called `light.sh` in the Moria directory
@@ -137,12 +137,11 @@ This is it! The final challenge to destroy the One Ring once and for all. The Ri
 
 1. **Climb the mountain**
    * Navigate to Mount Doom
-   * Find the forge chamber
+   * Find the forge chamber and navigate to it
 
 2. **Destroy the Ring**
    * Create a script called `destroy_ring.sh` that will delete the Ring file from your journey directory
    * Make it executable
-   * Navigate to the forge chamber
    * Run the `complete_the_quest.sh` script to test your solution
    * If successful, Middle Earth will be saved!
 
@@ -160,5 +159,3 @@ After destroying the Ring, you'll receive a certificate of achievement. Record i
 Submit your journey_log.txt file to complete your quest.
 
 ---
-
-*"Even the smallest person can change the course of the future." - Lady Galadriel*

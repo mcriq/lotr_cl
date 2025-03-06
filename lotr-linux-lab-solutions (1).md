@@ -175,7 +175,6 @@ cat mirror_of_galadriel.txt
 cd forest/
 
 # Count mallorn trees (demonstrate why ls | wc -l alone won't work here)
-ls *.mallorn | wc -l
 find forest -name "*.mallorn" | wc -l
 ```
 **Explanation:** This command counts all files ending with `.mallorn` by listing them and piping to the word count command.
